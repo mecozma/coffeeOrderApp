@@ -21,7 +21,7 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
-    int numberOfCoffees = 0;
+    int numberOfCoffees = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,35 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(numberOfCoffees);
-        displayPrice(numberOfCoffees * 5);
+        int price = calculatePrice();
+        String priceMessage = createOrderSummary(price);
+        displayQuantity(numberOfCoffees);
+        displayMessage(priceMessage);
+    }
+
+    /**
+     * Calculates the price of the order.
+     *
+     *@return total price
+     */
+    private int calculatePrice() {
+
+        int price = numberOfCoffees * 5;
+        return price;
+    }
+
+    /**
+     *  Order summary method
+     *
+     *  @param price
+     */
+
+    private String createOrderSummary (int price) {
+        String priceMessage = "Name: Kaptain Kunal" +
+                                    "\nQuantity: " + numberOfCoffees +
+                                    "\nTotal: " + numberOfCoffees * 5 +
+                                    "\nThank you!";
+        return priceMessage;
     }
 
     /**
@@ -43,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     public void increment(View view) {
 
         numberOfCoffees = numberOfCoffees + 1;
-        display(numberOfCoffees);
+        displayQuantity(numberOfCoffees);
     }
 
     /**
@@ -52,22 +79,26 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
 
         numberOfCoffees = numberOfCoffees - 1;
-        display(numberOfCoffees);
+        displayQuantity(numberOfCoffees);
     }
 
     /**
      * This method displays the given quantity value on the screen.
+     *
+     * @param numberOfCoffees number of the coffees to be ordered
      */
-    private void display(int number) {
+    private void displayQuantity(int numberOfCoffees) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText("" + numberOfCoffees);
     }
 
     /**
      * This method displays the given price on the screen.
+     *
+     * @param message
      */
-    private void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        priceTextView.setText(message);
     }
 }
