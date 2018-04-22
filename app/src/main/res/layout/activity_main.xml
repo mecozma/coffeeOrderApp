@@ -16,27 +16,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Your name here..."
-            android:inputType="textCapWords"/>
+            android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Toppings"
             android:textAllCaps="true"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+
         <CheckBox
             android:id="@+id/whippedCream"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="24dp"
-            android:text="Whipped Cream"/>
+            android:text="Whipped Cream" />
 
         <CheckBox
             android:id="@+id/chocolate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="24dp"
-            android:text="Chocolate"/>
+            android:text="Chocolate" />
 
         <TextView
             android:layout_width="match_parent"

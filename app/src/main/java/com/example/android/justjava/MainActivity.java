@@ -59,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
      * Calculates the price of the order.
      *
      * @param hasWhippedCream Adds 1$ if the user adds whipped cream topping
-     * @param hasChocolate Adds 2$ if the user adds chocolate topping
+     * @param hasChocolate    Adds 2$ if the user adds chocolate topping
      * @return total price
      */
     private int calculatePrice(boolean hasWhippedCream, boolean hasChocolate) {
 
-        int basePrice =  5;
+        int basePrice = 5;
 
         if (hasWhippedCream) {
-            basePrice +=1;
+            basePrice += 1;
         }
         if (hasChocolate) {
             basePrice += 2;
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (numberOfCoffees > 100) {
             numberOfCoffees = 100;
-            Toast.makeText(this,"You can't order more than 100 coffees", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "You can't order more than 100 coffees", Toast.LENGTH_LONG).show();
         }
 
         displayQuantity(numberOfCoffees);
