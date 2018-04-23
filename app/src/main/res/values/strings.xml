@@ -1,3 +1,28 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Just Java</string>
+     <!-- Your name here hint place holder[CHAR LIMIT=20] -->
+    <string name="your_name_here">Your name here...</string>
+    <!-- Header text for the list of toppings [CHAR LIMIT=20] -->
+    <string name="toppings">Toppings</string>
+    <!-- Topping options [CHAR LIMIT=20] -->
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <!-- Header text for number of coffee cupps ordered [CHAR LIMIT=20] -->
+    <string name="quantity">quantity</string>
+    <!-- Increment/decrement and order  buttons-->
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="order">order</string>
+    <!-- Number of initial cupps of coffee-->
+    <string name="_1">1</string>
+    <!-- Greeting/Thank you-->
+    <string name="thank_you">Thank you!</string>
+    <!-- Order summary  text for total, quantity, Add chocolate, Add whipped cream-->
+    <string name="total">Total:</string>
+    <string name="quantity_jf">Quantity: <xliff:g id="quantity" example="3">%i</xliff:g></string>
+    <string name="chocolate_jf">Add Chocolate? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
+    <string name="whipped_cream_jf">Add whipped Cream? <xliff:g id="addWhippedCream" example="false">%b</xliff:g></string>
+    <!-- Java string for name text and parameter for customers name-->
+    <string name="name">Name: <xliff:g id="name" example="Amadeus">%s</xliff:g></string>
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Doar Java</string>
+    <string name="your_name_here">Nume</string>
+    <string name="toppings">Glazuri</string>
+    <string name="whipped_cream">Frisca</string>
+    <string name="chocolate">Ciocolata</string>
+    <string name="quantity">cantitate</string>
+    <string name="order">comanda</string>
+    <string name="thank_you">multumesc</string>
+    <string name="total">total</string>
+    <string name="quantity_jf">cantitate <xliff:g id="quantity" example="3">%i</xliff:g></string>
+    <string name="chocolate_jf">adauga glazura de frisca? <xliff:g id="addWhippedCream" example="false">%b</xliff:g></string>
+    <string name="whipped_cream_jf">adauga glazura de cicolata? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
+    <string name="name">nume: <xliff:g id="name" example="Amadeus">%s</xliff:g></string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="_1">1</string>
+</resources>
