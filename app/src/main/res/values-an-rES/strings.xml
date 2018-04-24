@@ -14,6 +14,6 @@
     <string name="thank_you">gracias</string>
     <string name="quantity_jf">cantidad <xliff:g id="quantity" example="3">%i</xliff:g></string>
     <string name="chocolate_jf">Agregue el chocolate? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
-    <string name="whipped_cream_jf">"Agregue la crema batida?" <xliff:g id="addWhippedCream" id="false">%b</xliff:g></string>
+    <!--<string name="whipped_cream_jf">"Agregue la crema batida?" <xliff:g id="addWhippedCream" id="true">%b</xliff:g></string>-->
     <string name="name">nombre <xliff:g id="name" example="Amadeus">%s</xliff:g></string>
 </resources>

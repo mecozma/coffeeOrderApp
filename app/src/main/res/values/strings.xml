@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Just Java</string>
      <!-- Your name here hint place holder[CHAR LIMIT=20] -->
-    <string name="your_name_here">Your name here...</string>
+    <string name="your_name_here">Your name here&#8230;</string>
     <!-- Header text for the list of toppings [CHAR LIMIT=20] -->
     <string name="toppings">Toppings</string>
     <!-- Topping options [CHAR LIMIT=20] -->
@@ -22,7 +22,7 @@
     <string name="total">Total:</string>
     <string name="quantity_jf">Quantity: <xliff:g id="quantity" example="3">%i</xliff:g></string>
     <string name="chocolate_jf">Add Chocolate? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
-    <string name="whipped_cream_jf">Add whipped Cream? <xliff:g id="addWhippedCream" example="false">%b</xliff:g></string>
+    <string name="whipped_cream_jf">Add whipped Cream? <xliff:g id="addWhippedCream" example="true">%b</xliff:g></string>
     <!-- Java string for name text and parameter for customers name-->
     <string name="name">Name: <xliff:g id="name" example="Amadeus">%s</xliff:g></string>
 </resources>

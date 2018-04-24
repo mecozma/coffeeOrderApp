@@ -5,5 +5,5 @@
     <dimen name="checkbox_padding_left">24dp</dimen>
     <dimen name="quantity_buttons_size">48dp</dimen>
     <dimen name="quantity_no_padding">8dp</dimen>
-    <dimen name="order_button_bottom">200dp</dimen>
+    <dimen name="order_button_bottom">100dp</dimen>
 </resources>
